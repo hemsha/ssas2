@@ -52,3 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'register_controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['pricing'] = 'site_static_pages/pricing';
+$route['about_us'] = 'site_static_pages/about_us';
+$route['features'] = 'site_static_pages/features';
+$route['(:any)'] = 'site_static_pages/view/$1';

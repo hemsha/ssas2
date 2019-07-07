@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             
             //Loading Models
             $this->load->model('users/password_model');
-            $this->load->model('users/register_model');
+            //$this->load->model('users/register_model');
             $this->load->model('users/sign_in_model');
 
             //Loading Language File
@@ -22,6 +22,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function index(){
             $msg['response_msg'] = ""; 
+            $this->load->view('common/header');
+            $this->load->view('site/site_navbar');
             $this->load->view('users/register',$msg);
         
         }
